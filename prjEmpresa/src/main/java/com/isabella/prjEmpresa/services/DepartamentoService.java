@@ -43,8 +43,7 @@ public class DepartamentoService {
 
 		if (departamentoOptional.isPresent()) {
 			Departamento departamentoExistente = departamentoOptional.get();
-			departamentoExistente.setDescricao(novoDepartamento.getDescricao());
-			departamentoExistente.setisbn(novoDepartamento.getIsbn());
+			departamentoExistente.setName(novoDepartamento.getName());
 			return departamentorepository.save(departamentoExistente);
 		} else {
 			return null;

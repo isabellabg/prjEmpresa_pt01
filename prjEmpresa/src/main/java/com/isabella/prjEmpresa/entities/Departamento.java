@@ -1,6 +1,5 @@
 package com.isabella.prjEmpresa.entities;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -10,27 +9,26 @@ public class Departamento {
 
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private Long codigo;
+		private Long Codigo;
 		
-		private String name;
+		private String Name;
 
 		public Long getCodigo() {
-			return codigo;
+			return Codigo;
 		}
 
 		public void setCodigo(Long codigo) {
-			this.codigo = codigo;
+			Codigo = codigo;
 		}
 
 		public String getName() {
-			return name;
+			return Name;
 		}
 
 		public void setName(String name) {
-			this.name = name;
+			Name = name;
 		}
+
+		
 		
 	}
-
-
-
